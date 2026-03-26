@@ -142,8 +142,13 @@
     "deskripsi": "Silakan hubungi kami untuk bantuan dan layanan Anda",
     "info_kontak": {
       "telepon": {
-        "label": "Telepon",
+        "label": "Telepon Satu",
         "nilai": "0852 3135 7407",
+        "icon": "fa-solid fa-phone"
+      },
+      "telepon_2": {
+        "label": "Telepon Dua",
+        "nilai": "0812 3069 2426",
         "icon": "fa-solid fa-phone"
       },
       "email": {
