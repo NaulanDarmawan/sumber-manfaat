@@ -24,7 +24,7 @@ document.addEventListener('alpine:init', () => {
     kirimFormKeWA(dataForm) {
       const nomor = siteData.perusahaan.nomor_wa;
       // Merakit data form menjadi teks rapi untuk WA
-      const teksPesan = `Halo Bengkel Abimanyu, saya ingin bertanya.\n\n*Nama:* ${dataForm.nama}\n*Email:* ${dataForm.email}\n*No. HP:* ${dataForm.telepon}\n\n*Pesan:*\n${dataForm.pesan}`;
+      const teksPesan = `Halo Bengkel Sumber Manfaat, saya ingin bertanya.\n\n*Nama:* ${dataForm.nama}\n*Email:* ${dataForm.email}\n*No. HP:* ${dataForm.telepon}\n\n*Pesan:*\n${dataForm.pesan}`;
       
       const url = `https://wa.me/${nomor}?text=${encodeURIComponent(teksPesan)}`;
       window.open(url, '_blank');
