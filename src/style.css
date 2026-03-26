@@ -3,8 +3,8 @@
 /* Menambahkan custom color untuk brand Bengkel Abimanyu */
 @theme {
   --color-brand-light: #fef2f2;
-  --color-brand: #b91c1c;
-  --color-brand-dark: #991b1b;
+  --color-brand: #03AED2;
+  --color-brand-dark: #F45B26;
 }
 
 /* Memastikan scroll smooth untuk navigasi halaman */

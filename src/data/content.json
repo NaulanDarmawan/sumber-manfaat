@@ -15,7 +15,7 @@
   "hero": {
     "judul": "Bengkel Sumber Manfaat - Jasa Las & Konstruksi Besi Terpercaya di Malang",
     "deskripsi": "Bengkel las terbukti di Malang yang menyediakan kanopi, pagar, railing, teralis, dan konstruksi besi dengan SDM profesional serta bahan baku berkualitas tinggi. Kuat, rapi, aman, dan tahan lama.",
-    "gambar": "/images/bengkel_depan.jpg",
+    "gambar": "/images/hero-image.jpg",
     "tombol_utama": {
       "teks": "Hubungi Kami",
       "link": "#kontak"
@@ -76,7 +76,7 @@
       },
       {
         "icon": "fa-solid fa-border-all",
-        "nama": "Teralis Jendela",
+        "nama": "Mezanine",
         "deskripsi": "Pembuatan teralis anti maling untuk keamanan rumah tanpa mengorbankan estetika desain.",
         "fitur": ["Teralis Minimalis", "Teralis Motif", "Teralis Jaring"]
       },
@@ -101,12 +101,12 @@
     "deskripsi": "Dapatkan konsultasi GRATIS dan penawaran terbaik untuk proyek konstruksi dan las Anda. Hubungi kami sekarang.",
     "tombol_wa": {
       "teks": "Chat WhatsApp",
-      "link": "https://wa.me/6281234567890",
+      "link": "https://wa.me/6285231357407",
       "icon": "fa-brands fa-whatsapp"
     },
     "tombol_telepon": {
       "teks": "Telepon Sekarang",
-      "link": "tel:+6281234567890",
+      "link": "tel:+6285231357407",
       "icon": "fa-solid fa-phone"
     }
   },
@@ -115,37 +115,52 @@
     "deskripsi": "Lihat hasil kerja nyata dari berbagai proyek yang telah kami selesaikan.",
     "items": [
       {
-        "gambar": "/images/bengkel_depan.jpg",
+        "gambar": "/images/project-satu.jpg",
         "judul": "Pagar Minimalis Modern"
       },
       {
-        "gambar": "/images/bengkel_depan.jpg",
+        "gambar": "/images/project-dua.webp",
         "judul": "Kanopi"
       },
       {
-        "gambar": "/images/bengkel_depan.jpg",
+        "gambar": "/images/project-tiga.webp",
         "judul": "Railing Tangga"
       },
       {
-        "gambar": "/images/bengkel_depan.jpg",
-        "judul": "Teralis Jendela"
+        "gambar": "/images/project-empat.webp",
+        "judul": "Mezanine"
       }
     ]
   },
   "tentang": {
-    "judul": "Bengkel Las Terpercaya di Malang - Bengkel Abimanyu",
-    "deskripsi": "Bengkel Abimanyu adalah bengkel las dan konstruksi besi terkemuka di Malang yang telah dipercaya oleh ratusan pelanggan selama lebih dari 10 tahun. Kami mengutamakan kualitas, presisi, dan kepuasan klien dalam setiap pengerjaan, mulai dari pagar minimalis, kanopi, railing tangga, teralis jendela, hingga renovasi bangunan dengan standar kualitas tinggi.",
-    "link_teks": "Baca Selengkapnya",
+    "judul": "Bengkel Las Terpercaya di Malang - Sumber Manfaat",
+    "deskripsi": "Bengkel Sumber Manfaat adalah bengkel las dan konstruksi besi terkemuka di Malang yang telah dipercaya oleh ratusan pelanggan selama lebih dari 10 tahun. Kami mengutamakan kualitas, presisi, dan kepuasan klien dalam setiap pengerjaan, mulai dari pagar minimalis, kanopi, railing tangga, teralis jendela, hingga renovasi bangunan dengan standar kualitas tinggi.",
     "link_url": "#tentang"
   },
   "footer": {
     "judul": "Hubungi Kami",
     "deskripsi": "Silakan hubungi kami untuk bantuan dan layanan Anda",
     "info_kontak": {
-      "telepon": { "label": "Telepon", "nilai": "0812 3456 7890", "icon": "fa-solid fa-phone" },
-      "email": { "label": "Email", "nilai": "info@bengkelsumbermanfaat.com", "icon": "fa-solid fa-envelope" },
-      "alamat": { "label": "Alamat", "nilai": "Perum Tidar Pengkalan Asri 21/05, Tlogomas, Malang, Jawa Timur", "icon": "fa-solid fa-location-dot" },
-      "jam_kerja": { "label": "Jam Operasional", "nilai": "Senin - Sabtu: 08:00 - 16:00 WIB", "icon": "fa-regular fa-clock" }
+      "telepon": {
+        "label": "Telepon",
+        "nilai": "0852 3135 7407",
+        "icon": "fa-solid fa-phone"
+      },
+      "email": {
+        "label": "Email",
+        "nilai": "mdik0972@gmail.com",
+        "icon": "fa-solid fa-envelope"
+      },
+      "alamat": {
+        "label": "Alamat",
+        "nilai": "Jalan Kapiworo Raya Nomor 81 RT.03 RW.12",
+        "icon": "fa-solid fa-location-dot"
+      },
+      "jam_kerja": {
+        "label": "Jam Operasional",
+        "nilai": "Senin - Sabtu: 08:00 - 16:00 WIB",
+        "icon": "fa-regular fa-clock"
+      }
     },
     "form": {
       "judul": "Kirim Pesan",
