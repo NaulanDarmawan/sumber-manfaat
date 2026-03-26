@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bengkel Sumber Manfaat - Jasa Las di Malang</title>
+
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body
+    class="bg-gray-50 text-gray-800 antialiased selection:bg-brand selection:text-white"
+    x-data
+  >
+    <header
+      x-data="{ mobileMenuOpen: false }"
+      class="bg-white shadow-sm sticky top-0 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="#" class="flex-shrink-0 flex items-center gap-3">
+            <div
+              class="w-12 h-12 bg-brand rounded-full flex items-center justify-center text-white font-bold text-xl shadow-md"
+              x-text="$store.konten.perusahaan.logo_teks"
+            ></div>
+            <span
+              class="font-bold text-2xl text-brand leading-none"
+              x-text="$store.konten.perusahaan.nama"
+            ></span>
+          </a>
+
+          <nav class="hidden md:flex space-x-8">
+            <template x-for="item in $store.konten.navigasi" :key="item.label">
+              <a
+                :href="item.link"
+                class="text-gray-600 hover:text-brand font-semibold transition-colors duration-200"
+                x-text="item.label"
+              ></a>
+            </template>
+          </nav>
+
+          <div class="md:hidden flex items-center">
+            <button
+              @click="mobileMenuOpen = !mobileMenuOpen"
+              class="text-gray-600 hover:text-brand focus:outline-none"
+            >
+              <svg
+                class="h-7 w-7"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  x-show="!mobileMenuOpen"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+                <path
+                  x-show="mobileMenuOpen"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                  style="display: none"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        x-show="mobileMenuOpen"
+        x-collapse
+        @click.away="mobileMenuOpen = false"
+        class="md:hidden bg-white border-t border-gray-100"
+        style="display: none"
+      >
+        <div class="px-4 pt-2 pb-4 space-y-2">
+          <template x-for="item in $store.konten.navigasi" :key="item.label">
+            <a
+              :href="item.link"
+              @click="mobileMenuOpen = false"
+              class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand hover:bg-brand-light transition"
+              x-text="item.label"
+            ></a>
+          </template>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="bg-brand text-white py-16 md:py-24 relative overflow-hidden"
+    >
+      <div
+        class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:20px_20px]"
+      ></div>
+
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10"
+      >
+        <div class="flex flex-col gap-6">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight"
+            x-text="$store.konten.hero.judul"
+          ></h1>
+          <p
+            class="text-lg md:text-xl text-brand-light opacity-95 leading-relaxed max-w-xl"
+            x-text="$store.konten.hero.deskripsi"
+          ></p>
+
+          <div class="flex flex-wrap gap-4 mt-4">
+            <a
+              href="#"
+              @click.prevent="$store.aksi.keWhatsApp()"
+              class="bg-white text-brand px-8 py-3.5 rounded-md font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
+              x-text="$store.konten.hero.tombol_utama.teks"
+            ></a>
+
+            <a
+              href="#"
+              @click.prevent="$store.aksi.keWhatsApp('Halo, saya lihat website Sumber Manfaat, mau tanya pricelist.')"
+              target="_blank"
+              class="border-2 border-white text-white px-8 py-3.5 rounded-md font-bold text-lg hover:bg-brand-dark transition-all flex items-center gap-2"
+            >
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+                />
+              </svg>
+              <span x-text="$store.konten.hero.tombol_kedua.teks"></span>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="relative z-10 w-full rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] lg:aspect-auto lg:h-[450px]"
+        >
+          <img
+            :src="$store.konten.hero.gambar"
+            alt="Proses pengelasan Bengkel Abimanyu"
+            class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+          />
+
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-black/30 to-transparent"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="relative z-20 -mt-12 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
+    >
+      <div
+        class="bg-white rounded-xl shadow-xl p-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-gray-100"
+      >
+        <template x-for="stat in $store.konten.statistik" :key="stat.label">
+          <div class="pt-4 md:pt-0">
+            <div
+              class="text-4xl font-extrabold text-brand mb-2"
+              x-text="stat.angka"
+            ></div>
+            <div class="text-gray-500 font-medium" x-text="stat.label"></div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-extrabold text-gray-900 mb-4">
+            Keunggulan Kami
+          </h2>
+          <div class="w-16 h-1 bg-brand mx-auto"></div>
+        </div>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
+        >
+          <template x-for="item in $store.konten.keunggulan" :key="item.judul">
+            <div class="p-6">
+              <div
+                class="w-16 h-16 bg-brand-light text-brand rounded-full flex items-center justify-center mx-auto mb-6 text-2xl"
+              >
+                <i :class="item.icon"></i>
+              </div>
+              <h3
+                class="text-lg font-bold mb-3 text-gray-900"
+                x-text="item.judul"
+              ></h3>
+              <p
+                class="text-gray-500 text-sm leading-relaxed"
+                x-text="item.deskripsi"
+              ></p>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section id="layanan" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2
+            class="text-3xl font-extrabold text-gray-900 mb-4"
+            x-text="$store.konten.layanan.judul"
+          ></h2>
+          <div class="w-16 h-1 bg-brand mx-auto mb-4"></div>
+          <p
+            class="text-gray-500 max-w-2xl mx-auto"
+            x-text="$store.konten.layanan.deskripsi"
+          ></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <template
+            x-for="item in $store.konten.layanan.items"
+            :key="item.nama"
+          >
+            <div
+              :class="item.is_highlight ? 'border-brand shadow-md' : 'border-gray-100 shadow-sm'"
+              class="bg-white p-8 rounded-xl border hover:shadow-md transition relative group overflow-hidden"
+            >
+              <div
+                class="w-12 h-12 bg-brand-light rounded-lg flex items-center justify-center text-brand mb-6 group-hover:scale-110 transition text-xl"
+              >
+                <i :class="item.icon"></i>
+              </div>
+
+              <h3
+                class="text-xl font-bold mb-3 text-gray-900"
+                x-text="item.nama"
+              ></h3>
+              <p
+                class="text-gray-500 mb-5 text-sm leading-relaxed h-16"
+                x-text="item.deskripsi"
+              ></p>
+
+              <template x-if="item.fitur">
+                <ul class="text-sm text-gray-500 space-y-2">
+                  <template x-for="fitur in item.fitur" :key="fitur">
+                    <li class="flex items-center gap-2">
+                      <i class="fa-solid fa-check text-brand w-4"></i>
+                      <span x-text="fitur"></span>
+                    </li>
+                  </template>
+                </ul>
+              </template>
+
+              <template x-if="item.is_highlight">
+                <a
+                  :href="item.link_url"
+                  class="inline-block mt-4 text-brand font-bold hover:text-brand-dark transition"
+                  x-text="item.link_teks"
+                ></a>
+              </template>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-brand text-white text-center">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl md:text-4xl font-extrabold mb-4"
+          x-text="$store.konten.cta.judul"
+        ></h2>
+        <p
+          class="text-lg text-brand-light opacity-90 mb-8 max-w-2xl mx-auto"
+          x-text="$store.konten.cta.deskripsi"
+        ></p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a
+            @click="$store.aksi.keWhatsApp()"
+            target="_blank"
+            class="bg-white text-brand px-8 py-3 rounded-md font-bold hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2 group"
+          >
+            <i
+              :class="$store.konten.cta.tombol_wa.icon"
+              class="text-xl group-hover:scale-110 transition-transform"
+            ></i>
+            <span x-text="$store.konten.cta.tombol_wa.teks"></span>
+          </a>
+
+          <a
+            @click="$store.aksi.keWhatsApp('Halo, saya ingin janjian survei lokasi.')"
+            class="border-2 border-white text-white px-8 py-3 rounded-md font-bold hover:bg-brand-dark transition flex items-center justify-center gap-2 group"
+          >
+            <i
+              :class="$store.konten.cta.tombol_telepon.icon"
+              class="group-hover:scale-110 transition-transform"
+            ></i>
+            <span x-text="$store.konten.cta.tombol_telepon.teks"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portofolio" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-extrabold text-gray-900 mb-4"
+            x-text="$store.konten.galeri.judul"
+          ></h2>
+          <div class="w-16 h-1 bg-brand mx-auto mb-4"></div>
+          <p
+            class="text-gray-500 max-w-2xl mx-auto"
+            x-text="$store.konten.galeri.deskripsi"
+          ></p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <template
+            x-for="item in $store.konten.galeri.items"
+            :key="item.judul"
+          >
+            <div
+              class="relative group rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 aspect-square sm:aspect-[4/3] lg:aspect-square cursor-pointer"
+            >
+              <img
+                :src="item.gambar"
+                :alt="item.judul"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+
+              <div
+                class="absolute bottom-0 left-0 right-0 p-5 translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+              >
+                <h3
+                  class="text-white font-bold text-lg leading-tight"
+                  x-text="item.judul"
+                ></h3>
+              </div>
+            </div>
+          </template>
+        </div>
+      </div>
+    </section>
+
+    <section id="tentang" class="py-16 bg-gray-50">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-gray-100 text-center"
+        >
+          <h2
+            class="text-2xl font-bold text-gray-900 mb-4"
+            x-text="$store.konten.tentang.judul"
+          ></h2>
+          <p
+            class="text-gray-600 leading-relaxed mb-6"
+            x-text="$store.konten.tentang.deskripsi"
+          ></p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="kontak" class="bg-brand text-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl font-extrabold mb-3"
+            x-text="$store.konten.footer.judul"
+          ></h2>
+          <p
+            class="text-brand-light opacity-90"
+            x-text="$store.konten.footer.deskripsi"
+          ></p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start"
+        >
+          <div class="space-y-8">
+            <h3 class="text-xl font-bold border-b border-brand-light/20 pb-4">
+              Informasi Kontak
+            </h3>
+
+            <div class="space-y-6">
+              <template
+                x-for="info in Object.values($store.konten.footer.info_kontak)"
+                :key="info.label"
+              >
+                <div class="flex items-start gap-4">
+                  <div
+                    class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-1"
+                  >
+                    <i :class="info.icon" class="text-white"></i>
+                  </div>
+                  <div>
+                    <h4
+                      class="font-bold text-brand-light"
+                      x-text="info.label"
+                    ></h4>
+                    <p
+                      class="text-white/90 leading-relaxed mt-1"
+                      x-text="info.nilai"
+                    ></p>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </div>
+
+          <div class="bg-white p-8 rounded-xl shadow-2xl text-gray-800">
+            <h3
+              class="text-2xl font-bold text-gray-900 mb-6"
+              x-text="$store.konten.footer.form.judul"
+            ></h3>
+
+            <form
+              x-data="{ nama: '', email: '', telepon: '', pesan: '' }"
+              @submit.prevent="$store.aksi.kirimFormKeWA({ nama, email, telepon, pesan })"
+              class="space-y-4"
+            >
+              <div>
+                <label class="block text-sm font-bold text-gray-700 mb-1"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  x-model="nama"
+                  required
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand focus:ring-2 focus:ring-brand/20 outline-none transition"
+                  placeholder="Nama Anda"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-bold text-gray-700 mb-1"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    x-model="email"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand focus:ring-2 focus:ring-brand/20 outline-none transition"
+                    placeholder="email@anda.com"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-bold text-gray-700 mb-1"
+                    >Telepon</label
+                  >
+                  <input
+                    type="tel"
+                    x-model="telepon"
+                    required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand focus:ring-2 focus:ring-brand/20 outline-none transition"
+                    placeholder="0812xxx"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-sm font-bold text-gray-700 mb-1"
+                  >Pesan</label
+                >
+                <textarea
+                  x-model="pesan"
+                  required
+                  rows="4"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-brand focus:ring-2 focus:ring-brand/20 outline-none transition resize-none"
+                  placeholder="Tuliskan kebutuhan atau pertanyaan Anda di sini..."
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-brand hover:bg-brand-dark text-white font-bold py-3.5 rounded-lg transition-colors shadow-md mt-2"
+                x-text="$store.konten.footer.form.tombol"
+              ></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-brand-dark py-4 text-center text-white/80 text-sm border-t border-white/10"
+      >
+        <p x-text="$store.konten.footer.copyright"></p>
+      </div>
+    </footer>
+  </body>
+</html>

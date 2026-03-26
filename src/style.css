@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Menambahkan custom color untuk brand Bengkel Abimanyu */
+@theme {
+  --color-brand-light: #fef2f2;
+  --color-brand: #b91c1c;
+  --color-brand-dark: #991b1b;
+}
+
+/* Memastikan scroll smooth untuk navigasi halaman */
+html {
+  scroll-behavior: smooth;
+}

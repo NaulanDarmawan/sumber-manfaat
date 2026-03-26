@@ -1,0 +1,156 @@
+{
+  "perusahaan": {
+    "nama": "Bengkel Sumber Manfaat",
+    "logo_teks": "BA",
+    "nomor_wa": "6285231357407",
+    "pesan_default": "Halo Bengkel Sumber Manfaat, saya ingin berkonsultasi mengenai jasa las dan konstruksi."
+  },
+  "navigasi": [
+    { "label": "Beranda", "link": "#" },
+    { "label": "Tentang", "link": "#tentang" },
+    { "label": "Layanan", "link": "#layanan" },
+    { "label": "Portofolio", "link": "#portofolio" },
+    { "label": "Kontak", "link": "#kontak" }
+  ],
+  "hero": {
+    "judul": "Bengkel Sumber Manfaat - Jasa Las & Konstruksi Besi Terpercaya di Malang",
+    "deskripsi": "Bengkel las terbukti di Malang yang menyediakan kanopi, pagar, railing, teralis, dan konstruksi besi dengan SDM profesional serta bahan baku berkualitas tinggi. Kuat, rapi, aman, dan tahan lama.",
+    "gambar": "/images/bengkel_depan.jpg",
+    "tombol_utama": {
+      "teks": "Hubungi Kami",
+      "link": "#kontak"
+    },
+    "tombol_kedua": {
+      "teks": "Whatsapp Kami",
+      "link": "https://wa.me/6281234567890"
+    }
+  },
+  "statistik": [
+    { "angka": "10+", "label": "Tahun Pengalaman" },
+    { "angka": "500+", "label": "Proyek Selesai" },
+    { "angka": "100%", "label": "Kepuasan Pelanggan" }
+  ],
+  "keunggulan": [
+    {
+      "icon": "fa-solid fa-check-circle",
+      "judul": "Material Berkualitas",
+      "deskripsi": "Menggunakan besi dan material las standar SNI yang tahan lama."
+    },
+    {
+      "icon": "fa-solid fa-stopwatch",
+      "judul": "Pengerjaan Cepat",
+      "deskripsi": "Selesai tepat waktu sesuai jadwal tanpa mengurangi kualitas."
+    },
+    {
+      "icon": "fa-solid fa-tags",
+      "judul": "Harga Kompetitif",
+      "deskripsi": "Harga terjangkau, transparan, dan bisa disesuaikan budget."
+    },
+    {
+      "icon": "fa-solid fa-thumbs-up",
+      "judul": "Garansi Kerja",
+      "deskripsi": "Kami memberikan garansi untuk memastikan kepuasan Anda."
+    }
+  ],
+  "layanan": {
+    "judul": "Layanan Kami",
+    "deskripsi": "Kami menyediakan berbagai layanan konstruksi dan perbengkelan las terpadu untuk rumah tinggal maupun bangunan komersial.",
+    "items": [
+      {
+        "icon": "fa-solid fa-shield-halved",
+        "nama": "Las Pagar",
+        "deskripsi": "Pembuatan dan instalasi pagar besi dengan berbagai desain untuk memberikan keamanan rumah.",
+        "fitur": ["Pagar Besi Hollow", "Pagar Minimalis", "Pagar Klasik"]
+      },
+      {
+        "icon": "fa-solid fa-house-chimney",
+        "nama": "Kanopi",
+        "deskripsi": "Pemasangan atap kanopi carport, garasi, dll. Melindungi dari panas dan hujan.",
+        "fitur": ["Kanopi Baja Ringan", "Kanopi Spandek", "Kanopi Alderon"]
+      },
+      {
+        "icon": "fa-solid fa-stairs",
+        "nama": "Railing Tangga",
+        "deskripsi": "Pembuatan pegangan tangga (railing) dari berbagai bahan dengan desain minimalis atau estetik.",
+        "fitur": ["Railing Minimalis", "Railing Stainless", "Railing Kaca"]
+      },
+      {
+        "icon": "fa-solid fa-border-all",
+        "nama": "Teralis Jendela",
+        "deskripsi": "Pembuatan teralis anti maling untuk keamanan rumah tanpa mengorbankan estetika desain.",
+        "fitur": ["Teralis Minimalis", "Teralis Motif", "Teralis Jaring"]
+      },
+      {
+        "icon": "fa-solid fa-hammer",
+        "nama": "Renovasi Bangunan",
+        "deskripsi": "Jasa perbaikan dan perombakan struktur besi atau rangka atap yang sudah rusak karena cuaca.",
+        "fitur": ["Perbaikan Atap", "Ganti Rangka Besi", "Pengecatan Ulang"]
+      },
+      {
+        "icon": "fa-solid fa-users",
+        "nama": "Konsultasi Gratis",
+        "deskripsi": "Diskusikan ide dan kebutuhan Anda dengan tim ahli kami. Survei lokasi gratis untuk area Malang.",
+        "is_highlight": true,
+        "link_teks": "Hubungi Kami →",
+        "link_url": "#kontak"
+      }
+    ]
+  },
+  "cta": {
+    "judul": "Wujudkan Rumah Impian Anda Bersama Kami!",
+    "deskripsi": "Dapatkan konsultasi GRATIS dan penawaran terbaik untuk proyek konstruksi dan las Anda. Hubungi kami sekarang.",
+    "tombol_wa": {
+      "teks": "Chat WhatsApp",
+      "link": "https://wa.me/6281234567890",
+      "icon": "fa-brands fa-whatsapp"
+    },
+    "tombol_telepon": {
+      "teks": "Telepon Sekarang",
+      "link": "tel:+6281234567890",
+      "icon": "fa-solid fa-phone"
+    }
+  },
+  "galeri": {
+    "judul": "Galeri Proyek Kami",
+    "deskripsi": "Lihat hasil kerja nyata dari berbagai proyek yang telah kami selesaikan.",
+    "items": [
+      {
+        "gambar": "/images/bengkel_depan.jpg",
+        "judul": "Pagar Minimalis Modern"
+      },
+      {
+        "gambar": "/images/bengkel_depan.jpg",
+        "judul": "Kanopi"
+      },
+      {
+        "gambar": "/images/bengkel_depan.jpg",
+        "judul": "Railing Tangga"
+      },
+      {
+        "gambar": "/images/bengkel_depan.jpg",
+        "judul": "Teralis Jendela"
+      }
+    ]
+  },
+  "tentang": {
+    "judul": "Bengkel Las Terpercaya di Malang - Bengkel Abimanyu",
+    "deskripsi": "Bengkel Abimanyu adalah bengkel las dan konstruksi besi terkemuka di Malang yang telah dipercaya oleh ratusan pelanggan selama lebih dari 10 tahun. Kami mengutamakan kualitas, presisi, dan kepuasan klien dalam setiap pengerjaan, mulai dari pagar minimalis, kanopi, railing tangga, teralis jendela, hingga renovasi bangunan dengan standar kualitas tinggi.",
+    "link_teks": "Baca Selengkapnya",
+    "link_url": "#tentang"
+  },
+  "footer": {
+    "judul": "Hubungi Kami",
+    "deskripsi": "Silakan hubungi kami untuk bantuan dan layanan Anda",
+    "info_kontak": {
+      "telepon": { "label": "Telepon", "nilai": "0812 3456 7890", "icon": "fa-solid fa-phone" },
+      "email": { "label": "Email", "nilai": "info@bengkelsumbermanfaat.com", "icon": "fa-solid fa-envelope" },
+      "alamat": { "label": "Alamat", "nilai": "Perum Tidar Pengkalan Asri 21/05, Tlogomas, Malang, Jawa Timur", "icon": "fa-solid fa-location-dot" },
+      "jam_kerja": { "label": "Jam Operasional", "nilai": "Senin - Sabtu: 08:00 - 16:00 WIB", "icon": "fa-regular fa-clock" }
+    },
+    "form": {
+      "judul": "Kirim Pesan",
+      "tombol": "Kirim Pesan"
+    },
+    "copyright": "© 2026 Bengkel Sumber Manfaat - All rights reserved."
+  }
+}
